@@ -1,0 +1,127 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  color: #222;
+}
+
+.form-container {
+  width: 720px;
+  padding: 20px 30px;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #2a58db;
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+select,
+input,
+textarea {
+  width: 100%;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  margin-top: 4px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.green-field {
+  border: 2px solid #4ca64c;
+  background-color: #e5f3e6;
+}
+
+.input-group {
+  margin-bottom: 10px;
+  position: relative;
+}
+.row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-items: start;
+  margin-bottom: 15px;
+}
+.input-group input,
+.input-group textarea {
+  border-radius: 4px;
+  width: 100%;
+  font-size: 15px;
+  padding: 8px 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input-group.pink input {
+  border: 2px solid #ff7af8;
+  background-color: #ffe4ff;
+}
+
+.input-group.green textarea {
+  border: 2px solid #4ca64c;
+  background-color: #dff3df;
+}
+
+.invalid-feedback,
+.valid-feedback {
+  display: none;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.invalid-feedback {
+  color: #c22e9a;
+}
+
+.valid-feedback {
+  color: #2d752d;
+}
+
+textarea {
+  height: 90px;
+  resize: none;
+}
+
+button {
+  background-color: #2a58db;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1f47b3;
+}
+
+.my-validated .form-control:invalid {
+  border-color: #ff7af8;
+  background-color: #ffe4ff;
+}
+
+.my-validated .form-control:valid {
+  border-color: #4ca64c;
+  background-color: #dff3df;
+}
+
+.my-validated .form-control:invalid + .invalid-feedback {
+  display: block;
+}
+
+.my-validated .form-control:valid + .valid-feedback {
+  display: block;
+}

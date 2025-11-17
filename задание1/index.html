@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Написать мне</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Написать мне</h2>
+    <form id="send-message" novalidate method="POST" action="form_action.php">
+      <div class="form-group row">
+      <label for="theme">Тема сообщения</label>
+      <div class="input-group green">
+      <select id="theme" class="form-control green-field" required>
+        <option>Оставить отзыв</option>
+        <option>Купить фотографию</option>
+        <option>Предложить работу</option>
+        <option>Другое</option>
+      </select>
+    </div>
+    </div>
+    <div class="form-group row">
+      <label for="name">Имя</label>
+      <div class="input-group pink">
+        <input type="text" class="form-control" id="name" placeholder="Имя" required>
+        <small class="invalid-feedback">Заполните поле</small>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="email">Email</label>
+      <div class="input-group pink">
+        <input type="email" class="form-control" id="email" placeholder="Email" required>
+        <small class="invalid-feedback">Введите адрес электронной почты</small>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="message">Сообщение</label>
+      <div class="input-group green">
+        <textarea class="form-control" id="message" placeholder="Текст сообщения" required></textarea>
+        <small class="valid-feedback">Поле заполнено</small>
+      </div>
+    </div>
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+  <script src="js/validation.js"></script>
+</body>
+</html>
