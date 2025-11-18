@@ -32,12 +32,21 @@ select {
     gap: 15px;
 }
 
-.col {
+.col{
     width: 450px;
 }
-
-.item img {
+.card{
+    overflow: hidden;
+}
+.card-img-top{
     width: 100%;
-    height:250px;
+    height: 250px;
+    object-fit: cover;
+}
+.card-title{
+    font-size: 18px;
+}
+.cardimg{
+    width: 100%;
     aspect-ratio: 4/3;
 }
