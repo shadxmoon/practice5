@@ -94,7 +94,6 @@ let photos = [
 let select = document.getElementById('SelectImg');
 let row = document.getElementById('row');
 
-// Функция отображения всех фото
 function showPhotos(category) {
     row.innerHTML = "";
 
@@ -118,10 +117,8 @@ function showPhotos(category) {
     }
 }
 
-// Показываем все фото при загрузке
 showPhotos("all");
 
-// Изменение значения select
 select.addEventListener('change', function () {
     showPhotos(select.value);
 });
